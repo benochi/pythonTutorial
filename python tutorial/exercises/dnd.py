@@ -56,6 +56,42 @@ class PlayerCharacter(CharacterDice):
     self.wisdom=wisdom
     self.charisma=charisma
 
+charName = input("Character name: ")
+charRace = input("Character race: ")
+charSize = input("Character size: ")
+charAlign = input("Character alignment: ")
+charAc = input("Character AC: ")
+charHp = input("Character HP: ")
+charStr = input("Character Strength: ")
+charCon = input("Character Constitution: ")
+charDex = input("Character Dexterity: ")
+charInt = input("Character Intelligence: ")
+charWis = input("Character Wisdom: ")
+charCha = input("Character Charisma: ")
+
+
+charObj = PlayerCharacter(
+  name = charName,
+  race = charRace,
+  size= charSize,
+  alignment= charAlign,
+  armorClass= charAc,
+  hp= charHp,
+  strength= charStr,
+  constitution= charCon,
+  dexterity= charDex,
+  intelligence= charInt,
+  wisdom= charWis,
+  charisma= charCha
+)
+
+print("Player character " + charObj.name + " created successfully.")
+
+print(charObj.roll(20))
+print(charObj.skillCheck(7))
+
+
+"""
 testguy = PlayerCharacter(
   name="TestGuy",
   race="hooman",
@@ -70,11 +106,12 @@ testguy = PlayerCharacter(
   wisdom=7,
   charisma=4
 )
+"""
 
 #print(CharacterDice.roll(20))
 #print(CharacterDice.skillCheck(7))
 
 #print(testguy.name, testguy.strength)
 
-print(testguy.roll(20))
-print(testguy.skillCheck(7))
+#print(testguy.roll(20))
+#print(testguy.skillCheck(7))
