@@ -56,6 +56,32 @@ class PlayerCharacter(CharacterDice):
     self.wisdom=wisdom
     self.charisma=charisma
 
+
+charList = ['name','race','size','alignment','AC','HP','Strength','Constitution','Dexterity','Intelligence','Wisdom','Charisma']
+charBuild =[]
+
+for s in charList:
+  x = input("Enter Character " + s + ": ")
+  charBuild.append(x)
+
+charObj2 = PlayerCharacter(
+  name = charBuild[0],
+  race = charBuild[1],
+  size= charBuild[2],
+  alignment= charBuild[3],
+  armorClass= charBuild[4],
+  hp= charBuild[5],
+  strength= charBuild[6],
+  constitution= charBuild[7],
+  dexterity= charBuild[8],
+  intelligence= charBuild[9],
+  wisdom= charBuild[10],
+  charisma= charBuild[11]
+)
+
+print("Player character " + charObj2.name + " created successfully.")
+
+"""
 charName = input("Character name: ")
 charRace = input("Character race: ")
 charSize = input("Character size: ")
@@ -68,8 +94,8 @@ charDex = input("Character Dexterity: ")
 charInt = input("Character Intelligence: ")
 charWis = input("Character Wisdom: ")
 charCha = input("Character Charisma: ")
-
-
+"""
+"""
 charObj = PlayerCharacter(
   name = charName,
   race = charRace,
@@ -89,7 +115,7 @@ print("Player character " + charObj.name + " created successfully.")
 
 print(charObj.roll(20))
 print(charObj.skillCheck(7))
-
+"""
 
 """
 testguy = PlayerCharacter(
