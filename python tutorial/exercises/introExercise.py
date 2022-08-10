@@ -20,6 +20,7 @@
 
 
 #add user input in the CLI(command line interface) and assign it to a variable
+#ask the user if they would like a free/cheap/moderate/expensive item.
 
 
 #build a if/elif/else to handle user input and check the user input string equality with a comparison operator(==)
