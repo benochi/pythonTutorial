@@ -56,8 +56,8 @@ customers = ['Ashley', 'Dan', 'Dustin', 'Aaron']
 
 #build a method that loops over that list, printing each of them.
 def print_customers(customers):
-  for cust in customers:
-    print("Customer " + cust + " entered the store.")
+  for customer in customers:
+    print("Customer " + customer + " entered the store.")
 
 #execute that method Be sure to pass in any necessary arguments.
 #The proper scope should have the list outside of the method. 
