@@ -9,7 +9,7 @@ moderate = s.moderateItems
 expensive = s.expensiveItems
 
 #print one of the unpacked variables from your module
-print(s.x)
+print("I unpacked: " + s.x)
 
 #add user input asking for a first and last name
 fullName = input("What is your first and last name?")
