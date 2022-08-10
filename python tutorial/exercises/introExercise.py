@@ -1,3 +1,5 @@
+#make another file to store your data objects, I use storeItems.py  
+
 #import the module you made AND rename it
 
 
